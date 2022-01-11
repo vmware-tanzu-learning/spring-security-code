@@ -1,0 +1,52 @@
+dn: dc=rewardsdining,dc=org
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: rewardsdining
+
+dn: ou=groups,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+
+dn: uid=keith,ou=people,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Keith and Keri Donald
+sn: Donald
+uid: keith
+userPassword: spring
+
+dn: uid=dollie,ou=people,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Dollie R. Adams
+sn: Adams
+uid: dollie
+userPassword: spring
+
+
+dn: cn=users,ou=groups,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: users
+ou: user
+member: uid=keith,ou=people,dc=rewardsdining,dc=org
+member: uid=dollie,ou=people,dc=rewardsdining,dc=org
+
+dn: cn=admins,ou=groups,dc=rewardsdining,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: admins
+ou: admin
+member: uid=dollie,ou=people,dc=rewardsdining,dc=org

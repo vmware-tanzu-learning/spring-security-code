@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+	<body>
+		<div th:fragment="header">
+		 <div class="container">
+		   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+		     <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+		       <img th:src="@{/images/spring-trans-dark.png}"/>
+		     </a>
+		
+		     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+		       <li><a th:href="@{/restaurants}" class="nav-link px-2 text-white">Restaurants</a></li>
+		       <li><a th:href="@{/my-rewards}" class="nav-link px-2 text-white">My Rewards</a></li>
+		       <li>
+		      	  <div class="dropdown">
+			        <a href="#" class="nav-link px-2 text-white dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+			          Admin
+			        </a>
+			        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+			          <li><a class="dropdown-item" th:href="@{/accounts}">Accounts</a></li>
+			          <li><a class="dropdown-item" th:href="@{/rewards}">Rewards</a></li>
+			        </ul>
+			      </div>
+		       </li>
+		     </ul>
+		
+			 
+		
+			 
+		     <div class="text-end" sec:authorize="isAnonymous()">
+		       <a th:href="@{/login}"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+		     </div>
+		      <div class="text-end" sec:authorize="isAuthenticated()">
+		      <div class="dropdown text-end">
+		          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser" data-bs-toggle="dropdown" aria-expanded="false">
+		            <img th:src="@{https://eu.ui-avatars.com/api/?name={name}(name=${#authentication?.name})}" alt="mdo" width="32" height="32" class="rounded-circle">
+		          </a>
+		          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser">
+		            <!-- <li><hr class="dropdown-divider"></li>  -->	
+		            <li><a class="dropdown-item" th:href="@{/logout}">Logout</a></li>
+		          </ul>
+		        </div>
+		     </div>
+		   </div>
+		 </div>
+		</div>
+	</body>
+</html>

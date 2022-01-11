@@ -1,0 +1,109 @@
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456789', 'Keith and Keri Donald', 'keith', '{bcrypt}$2a$10$/ebEcjNSEgX89NM1fTI.H.B2px3rb14n4shYCTwUFGHWF83UHBPbm');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456001', 'Dollie R. Adams', 'dollie', '{bcrypt}$2a$10$LNUyE9/qFhyhytrpMvtZ1ukIskdTOB5EEet8U9QkeAzahJmeYHYEa');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456002', 'Cornelia J. Andresen', 'cornelia','{MD5}{ScFEuFX0zQoriq19xMrRBHZXB2onqtss1CYFkhIpW04=}42c6eac8e28acfc86725decfe61f72ac');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456003', 'Coral Villareal Betancourt', 'coral','{bcrypt}$2a$10$X5XT23Ixe8AeIYWxP7tZJe3lU9qB/CR4tFtHO19a8UErBuniDRH0S');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456004', 'Chad I. Cobbs', 'chad', '{bcrypt}$2a$10$QCpjm5rVx9OW7oXka/tI0eayc0ckDHAMiZde0fjaIRLMWsNS0K4TS');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456005', 'Michael C. Feller', 'michaelc', '{bcrypt}$2a$10$ZayDQ..rDQIlXsUqBpswXu8igjEjXuhR9xfnYy3gf3rpPlp6cMJSy');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456006', 'Michael J. Grover', 'michaelj', '{bcrypt}$2a$10$5ub7EF1S.Rrm1qwg9.jQEu8FU7.P2Sb9Ys5ZKHgHjAQSKkWd3ps8G');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456007', 'John C. Howard', 'johnc', '{bcrypt}$2a$10$eB6pZvkCP8bbb8mbxFiJKOnVfPUk/KAazccWhJlavx.2me.gW4zwi');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456008', 'Ida Ketterer', 'ida','{MD5}{u4ksIpRsqWFWnKndzr61iG4CyYLlfzpY7UoiROPuiiw=}093ad0d74644830e0e04b665dae95169');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456009', 'Laina Ochoa Lucero', 'laina','{MD5}{VpUaT6PZlC3rVxbY/YmhCOabeFvygf+2RgKl9wg1C+k=}127c818e10cf5ad96c7633334a5a8347');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456010', 'Wesley M. Mayo', 'wesley','{MD5}{CgtTuYxuHt49WsXR4hDSwfpkaWTwe4VqOBo0KOWv+9c=}f24abe5e552c84e70d4df08f612e4690');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456011', 'Leslie F. Mcclary', 'leslie','{MD5}{9tBsyfUj+/SKlSKDITTKruxbY3Oliri24ZUe4z8UqCE=}b98a8d3583f6a62d2c7ccad99bea8dd4');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456012', 'John D. Mudra', 'johnd', '{bcrypt}$2a$10$bgrJLZl8CTFb78JEDHpr4uSbHdZohvDwbDbZdLc5EnDAoLMxMwtSq');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456013', 'Pietronella J. Nielsen', 'pietronella', '{bcrypt}$2a$10$H9BbC5NIm7dqAIX2BWnkVObILGQLZtGOOTe2GnZgmN9PgfRlpfRzS');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456014', 'John S. Oleary', 'john', '{bcrypt}$2a$10$s4csF99XbuYyqrHDuAnibOE/tEzw32yJwRn9vVM5YUT1Biug5Deze');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456015', 'Glenda D. Smith', 'glenda', '{bcrypt}$2a$10$XYnw8PRgdDJehb3nePV3h.liPgQ6mfYAdiZtj4.VecyJfDnQ1rT/y');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456016', 'Willemina O. Thygesen', 'willemina', '{bcrypt}$2a$10$y7kIcO.TI5A9SFhQl21ftOcisVU4kIRK5m9recFX9o4aBpWBgL8bu');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456017', 'Antje Vogt', 'antje', '{bcrypt}$2a$10$ABN1MbAv/f6V6CNxz4AciO4nYEq6zHj39/Nzwkfe0Y1tuVm1xtm1.');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456018', 'Julia Weber', 'julia', '{bcrypt}$2a$10$CbxEcf88rs7HUTZl7b0UyupGJTgCm6gBcOPwZPjW4C.rohrezTsBC');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456019', 'Mark T. Williams', 'mark', '{bcrypt}$2a$10$7n1KECaBSKDtmuCkDTLJauYSzHk2yluDhZ4QNBJtPxcyyeN/BCqEG');
+insert into T_ACCOUNT (NUMBER, NAME, USERNAME, PASSWORD) values ('123456020', 'Christine J. Wilson', 'christine', '{bcrypt}$2a$10$zQ24SoYyQRpuQeJ00HG/E.uiIwFZHa44OcHPcvQOFb95cV.6mxvHK');
+
+insert into T_ROLE (NAME) values ('ROLE_USER');
+insert into T_ROLE (NAME) values ('ROLE_MANAGER');
+insert into T_ROLE (NAME) values ('ROLE_ADMIN');
+
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (1, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (2, 'ROLE_MANAGER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (3, 'ROLE_MANAGER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (4, 'ROLE_MANAGER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (5, 'ROLE_ADMIN');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (6, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (7, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (8, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (9, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (10, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (11, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (12, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (13, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (14, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (15, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (16, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (17, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (18, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (19, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (20, 'ROLE_USER');
+insert into T_ACCOUNT_ROLE (ACCOUNT_ID, ROLE_NAME) values (21, 'ROLE_USER');
+
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (1, '1234123412341234');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (2, '1234123412340001');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (3, '1234123412340002');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (4, '1234123412340003');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (5, '1234123412340004');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (6, '1234123412340005');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (7, '1234123412340006');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (8, '1234123412340007');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (9, '1234123412340008');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (10, '1234123412340009');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (11, '1234123412340010');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (12, '1234123412340011');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (13, '1234123412340012');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (14, '1234123412340013');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (15, '1234123412340014');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (16, '1234123412340015');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (17, '1234123412340016');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (18, '1234123412340017');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (19, '1234123412340018');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (20, '1234123412340019');
+insert into T_ACCOUNT_CREDIT_CARD (ACCOUNT_ID, NUMBER) values (21, '1234123412340020');
+
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (1, 'Annabelle', .5, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (1, 'Corgan', .5, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (4, 'Antolin', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (4, 'Argus', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (4, 'Gian', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (4, 'Argeo', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (9, 'Kai', .33, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (9, 'Kasper', .33, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (9, 'Ernst', .34, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (13, 'Brian', .75, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (13, 'Shelby', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (16, 'Charles', .50, 0.00);	
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (16, 'Thomas', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (16, 'Neil', .25, 0.00);
+insert into T_ACCOUNT_BENEFICIARY (ACCOUNT_ID, NAME, ALLOCATION_PERCENTAGE, SAVINGS) 
+	values (18, 'Daniel', 1.0, 0.00);
+
+insert into T_RESTAURANT (MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE, LOCATION, BENEFIT_AVAILABILITY_POLICY, OWNER_ID) 
+	values ('1234567890', 'AppleBeans', .08, 'New York', 'A', 2);
+    
+insert into T_RESTAURANT (MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE, LOCATION, BENEFIT_AVAILABILITY_POLICY, OWNER_ID) 
+	values ('1234567891', 'Remember the Jamón', .1, 'Barcelona', 'A', 3);
+    
+    insert into T_RESTAURANT (MERCHANT_NUMBER, NAME, BENEFIT_PERCENTAGE, LOCATION, BENEFIT_AVAILABILITY_POLICY, OWNER_ID) 
+	values ('1234567892', 'Microsushi', .09, 'Tokyo', 'A', 4);

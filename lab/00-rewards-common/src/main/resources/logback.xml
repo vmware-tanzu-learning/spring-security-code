@@ -1,0 +1,42 @@
+<!DOCTYPE configuration>
+
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%-5p: %logger{40} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<!-- Application logger -->
+	<logger name="rewardsdining">
+		<level value="debug" />
+	</logger>
+
+	<!--  Spring loggers -->
+	<logger name="org.springframework">
+		<level value="info" />
+	</logger>
+	
+	<logger name="org.springframework.security">
+		<level value="debug" />
+	</logger>
+	
+	<!-- 3rd party Loggers -->
+	<logger name="org.hibernate">
+		<level value="warn" />
+	</logger>
+	<logger name="com.zaxxer.hikari">
+		<level value="info" />
+	</logger>
+	<logger name="org.thymeleaf">
+		<level value="info" />
+	</logger>
+	
+	
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+</configuration>

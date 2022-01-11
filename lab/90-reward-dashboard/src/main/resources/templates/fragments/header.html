@@ -1,0 +1,27 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+	  xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+</head>
+	<body>
+		<div th:fragment="header">
+		 <div class="container">
+		   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+		    <span class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">Dashboard</span>
+		
+			<ul class="nav col-8 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+			</ul>
+		
+		     <div class="text-end" sec:authorize="isAnonymous()">
+		       <a th:href="@{/login}"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+		     </div>
+		      <div class="text-end" sec:authorize="isAuthenticated()">
+		      <div class="text-end">
+		          Welcome <span sec:authentication="name">Username</span> | <a th:href="@{/user-info}">User Info</a> | <a th:href="@{/logout}">Logout</a>
+		        </div>
+		     </div>
+		   </div>
+		 </div>
+		</div>
+	</body>
+</html>

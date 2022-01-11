@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+	    
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main class="container px-4 py-5" layout:fragment="content">
+		  <form method="post" action="/login" class="col-4 mx-auto">
+		  
+		    <h1 class="h1 mb-1 fw-normal">Please sign in</h1>
+			<div th:if="${param.error}">
+	             <div class="alert alert-danger">
+	                 Invalid username or password.
+	             </div>
+            </div>
+            <div th:if="${param.logout}">
+                    <div class="alert alert-info">You have been logged out.</div>
+            </div>
+		    <div class="form-floating">
+		      <input type="text" class="form-control" id="user" name="user" placeholder="user">
+		      <label for="username">User</label>
+		    </div>
+		    <div class="form-floating">
+		      <input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
+		      <label for="password">Password</label>
+		    </div>
+		    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+		
+		    <div class="checkbox mb-3">
+		      <label>
+		        <input type="checkbox" value="remember-me"> Remember me
+		      </label>
+		    </div>
+		    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+		  </form>
+	  </main>
+	</div>
+
+  </body>
+</html>

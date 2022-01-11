@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>Restaurants</title>
+  </head>
+  <body>
+	    
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main>
+		  <div class="container px-4 py-5" id="custom-cards" layout:fragment="content">
+		  	<h2>Welcome to Rewards Dining</h2>
+		  	<p>Pay with a debit or credit card registered with the Reward Network and you will be automatically rewarded.</p>
+		  	<p> See the list of participating <a th:href="@{/restaurants}">Restaurants</a></p>
+		  </div>
+	  </main>
+	</div>
+
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main>
+	  	<div class="container px-4 py-5" id="custom-cards" layout:fragment="content">
+	  		<div id="error" class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"></div>
+
+     		<canvas class="my-2 w-75 h-75" id="pie-chart" width="300" height="300"></canvas>
+	  	</div>
+	  </main>
+	</div>
+	<th:block layout:fragment="script">
+		<script src="/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+	    <script src="/js/chart.min.js" crossorigin="anonymous"></script>
+	    <script src="/js/dashboard.js" crossorigin="anonymous"></script>
+	</th:block>
+  </body>
+</html>
+
+
+
+
+

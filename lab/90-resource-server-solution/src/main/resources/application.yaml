@@ -1,0 +1,13 @@
+server:
+  port: 8081
+  
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://rewards-auth-server:9091
+        opaque-token:
+            introspection-uri: http://rewards-auth-server:9091/oauth2/introspect
+            client-id: rewards-dining
+            client-secret: eH9A2N1BrjjsTPYUse79Orvez8HrST7r

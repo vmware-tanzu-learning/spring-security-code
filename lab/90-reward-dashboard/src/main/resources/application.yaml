@@ -1,0 +1,7 @@
+server:
+  port: 8082
+  error:
+    include-stacktrace: always
+            
+rewards-dining:
+  url: http://localhost:8080

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>Logout</title>
+  </head>
+  <body>
+	    
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main class="container px-4 py-5" layout:fragment="content">
+		  <form class="form-signin col-7 mx-auto text-center" method="post" action="/logout">
+       		<h2 class="form-signin-heading">Are you sure you want to log out?</h2>
+			<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+        	<button class="btn btn-lg btn-primary btn-block" type="submit">Log Out</button>
+      </form>
+	  </main>
+	</div>
+
+  </body>
+</html>

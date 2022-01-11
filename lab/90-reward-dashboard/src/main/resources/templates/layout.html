@@ -1,0 +1,60 @@
+<!doctype html>
+<html 
+	xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Rewards Dining Application">
+    <title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">Rewards Dashboard</title>
+
+	<link href="/css/bootstrap/5.1.0/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+    <!-- Favicons -->
+	<link rel="icon" href="/favicon.ico">
+	<meta name="theme-color" content="#7952b3">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="/css/vmware.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+
+  
+  <header class="p-3 bg-dark text-white">
+  	<div th:replace="/fragments/header"></div>
+  </header>
+
+  <main>
+	<div layout:fragment="content"></div>
+  </main>
+  <footer class="pt-5 my-5 text-muted border-top">
+    Rewards Dashboard - Spring Security
+  </footer>
+</div>
+
+
+    <script src="/js/bootstrap/5.1.0/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <th:block layout:fragment="script"></th:block>
+  </body>
+</html>

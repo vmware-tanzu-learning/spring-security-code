@@ -1,0 +1,20 @@
+server:
+  port: 8083
+  error:
+    include-stacktrace: always
+  
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          rewards-dining:
+            client-id: rewards-dashboard
+            client-secret: aH9A2N1BrjjsTPYUse79Orvez8HrST7r
+            scope: openid
+        provider:
+          rewards-dining: 
+            issuer-uri: http://rewards-auth-server:9091
+            
+rewards-dining:
+  url: http://localhost:8081

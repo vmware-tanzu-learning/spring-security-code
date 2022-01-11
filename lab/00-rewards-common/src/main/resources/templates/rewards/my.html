@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>My Rewards</title>
+  </head>
+  <body>
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main>
+	  	  
+		  <div class="container px-4 py-5" id="custom-cards" layout:fragment="content">
+		  	<h2>My Rewards</h2>
+			<div class="table-responsive">
+	        <table class="table table-striped table-sm">
+	          <thead>
+	            <tr>
+	              <th scope="col">Dining Date</th>
+	              <th scope="col">Restaurant</th>
+	              <th scope="col">Dining Amount</th>
+	              <th scope="col">Reward Amount</th>
+	            </tr>
+	          </thead>
+	          <tbody>
+	            <tr th:each="reward : ${rewards}">
+	              <td th:text=${reward.diningDate}>Date</td>
+	              <td th:text=${reward.restaurant.name}>Restaurant</td>
+	              <td th:text=${reward.diningAmount}>Amount</td>
+	              <td th:text=${reward.amount}>Amount</td>
+	            </tr>
+	          </tbody>
+	        </table>
+		  </div>
+		</div>
+	  </main>
+	</div>
+
+  </body>
+</html>

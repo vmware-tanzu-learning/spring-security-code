@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vmware.learning.spring-security</groupId>
+    <artifactId>parentProject</artifactId>
+    <version>1.0.0</version>
+    <organization>
+        <name>VMware Learning</name>
+        <url>https://www.vmware.com/learning.html</url>
+    </organization>
+    <packaging>pom</packaging>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.2</version>
+    </parent>
+    <properties>
+        <java.version>11</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+    	<dependency>
+        	<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+    	</dependency>
+    	<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+    	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>nz.net.ultraq.thymeleaf</groupId>
+			<artifactId>thymeleaf-layout-dialect</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf.extras</groupId>
+			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+		</dependency>
+    	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+    	<dependency>
+       		<groupId>org.springframework.boot</groupId>
+        	<artifactId>spring-boot-starter-security</artifactId>
+    	</dependency>
+        <dependency>
+            	<groupId>org.springframework.security</groupId>
+            	<artifactId>spring-security-test</artifactId>
+            	<scope>test</scope>
+        </dependency>
+        <dependency>
+           	 <groupId>org.springframework.boot</groupId>
+            	<artifactId>spring-boot-starter-test</artifactId>
+            	<scope>test</scope>
+        </dependency>
+        <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+        <!-- Database -->
+        <dependency>
+		<groupId>com.h2database</groupId>
+		<artifactId>h2</artifactId>
+		<scope>runtime</scope>
+	</dependency>
+    </dependencies>
+
+    <!-- Dependencies we may need, and their versions -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Course specific -->
+            <dependency>
+                <groupId>com.vmware.learning.spring-security</groupId>
+                <artifactId>00-rewards-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <repositories>
+    <repository>
+      <id>spring-milestones</id>
+      <name>Spring Milestones</name>
+      <url>https://repo.spring.io/milestone</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>spring-milestones</id>
+      <name>Spring Milestones</name>
+      <url>https://repo.spring.io/milestone</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+    <modules>
+        <!--
+          // KEEP IN SYNC WITH SLIDES
+          -->
+        <!-- Section: Shared -->
+        <module>00-rewards-common</module>
+        <module>20-security-basics</module>
+        <module>20-security-basics-solution</module>
+        <module>30-authentication</module>
+        <module>30-authentication-solution</module>
+        <module>40-authorization</module>
+        <module>40-authorization-solution</module>
+        <module>41-method-security</module>
+        <module>41-method-security-solution</module>
+        <module>50-security-testing</module>
+        <module>50-security-testing-solution</module>
+        <module>60-password-handling</module>
+        <module>60-password-handling-solution</module>
+        <module>70-oauth2-login</module>
+        <module>70-oauth2-login-solution</module>
+        <module>80-authorization-server</module>
+        <module>80-authorization-server-solution</module>
+        <module>90-resource-server</module>
+        <module>90-resource-server-solution</module>
+        <module>90-reward-dashboard</module>
+        <module>90-reward-dashboard-solution</module>
+
+    </modules>
+</project>

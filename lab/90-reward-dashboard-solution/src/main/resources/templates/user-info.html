@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>OAuth2</title>
+  </head>
+  <body>
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main>
+	  	<div class="container px-4 py-5" id="custom-cards" layout:fragment="content">
+	  	
+	  		<h2>User Info</h2>
+			<div class="table-responsive">
+	        <table class="table table-striped table-sm">
+	          <thead>
+	            <tr>
+	              
+	              <th scope="col">Attribute</th>
+	              <th scope="col">Value</th>
+	            </tr>
+	          </thead>
+	          <tbody>
+	            <tr>
+	              <td>User Name</td>
+	              <td th:text="${username}">User Name</td>
+	            </tr>
+	            <tr>
+	              <td>Access Token</td>
+	              <td th:text="${accessToken}">Access Token</td>
+	            </tr>
+	            <tr>
+	              <td>User attributes</td>
+	              <td th:text="${userAttributes}">Attributes</td>
+	            </tr>
+	             <tr>
+	              <td>ID Token</td>
+	              <td th:text="${idToken}">ID Token</td>
+	            </tr>
+	            <tr>
+	              <td>Refresh Token</td>
+	              <td th:text="${refreshToken}">Refresh Token</td>
+	            </tr>
+	          </tbody>
+	        </table>
+		  </div>
+	    </div>
+	  </main>
+	</div>
+
+  </body>
+</html>
+

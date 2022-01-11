@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      layout:decorate="layout">
+  <head>
+    <title>Restaurants</title>
+  </head>
+  <body>
+	    
+	<div class="col-lg-8 mx-auto p-3 py-md-5">
+	  <main>
+	  	  
+		  <div class="container px-4 py-5" id="custom-cards" layout:fragment="content">
+		  <h2>Participating Restaurants</h2>
+			  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+			      <div class="col" th:each="restaurant : ${restaurants}">
+			        <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/images/restaurant-bg-2.jpg');">
+			          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+			            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold" th:text="${restaurant.name}">${restaurant.name}</h2>
+			            <ul class="d-flex list-unstyled mt-auto">
+			              <li class="me-auto" th:text="${restaurant.benefitPercentage}">
+			               
+			              </li>
+			              <li class="d-flex align-items-center me-3">
+			                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+			                <small th:text="${restaurant.location}">Location</small>
+			              </li>
+			            </ul>
+			          </div>
+			        </div>
+			      </div>
+			  </div>
+		  </div>
+	  </main>
+	</div>
+
+  </body>
+</html>
